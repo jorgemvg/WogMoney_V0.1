@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp" 
+    android:background="#7089FA">
+   
+		<TextView 
+			android:id="@+id/label_CuentaCoop" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content" 
+ 			android:text="@string/label_cuentaCoop" 
+ 			android:textColor="@color/WhiteSmoke"
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/CuentaCoop"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edittext_selector"
+			android:ems="15"
+			android:maxLength="12"
+			android:inputType="number" />
+
+		<TextView 
+			android:id="@+id/label_Cedula" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginTop="10dp" 
+ 			android:text="@string/label_cedula" 
+ 			android:textColor="@color/WhiteSmoke"
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/CedulaUsuario"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edittext_selector"
+			android:ems="15"
+			android:maxLength="10"
+			android:inputType="number" />
+
+		<TextView 
+			android:id="@+id/label_NombreUsuario" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginTop="10dp" 
+ 			android:text="@string/label_usuario"
+ 			android:textColor="@color/WhiteSmoke"
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/NombreUsuario"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edittext_selector"
+			android:ems="15"
+			android:maxLength="20"
+			android:inputType="text" />
+
+		<TextView 
+			android:id="@+id/label_ClaveActivacion" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginTop="10dp" 
+ 			android:text="@string/label_clave"
+ 			android:textColor="@color/WhiteSmoke"
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/ClaveActivacion"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edittext_selector"
+			android:ems="15"
+			android:maxLength="20"
+			android:inputType="text" />
+		
+		<Button
+			android:id="@+id/btnContinuar"
+			android:layout_width="230dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:ems="10"
+			android:text="@string/boton_continuar" 
+			android:textColor="@color/WhiteSmoke"
+			android:layout_gravity="center"
+			android:background="@drawable/button_selector"/>
+
+</LinearLayout>

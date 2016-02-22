@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.wog.wogmoney.ProductosListActivity"
+    tools:layout="@android:layout/list_content"
+    android:orientation="vertical" >
+
+    <TextView
+    	android:id="@+id/tv_titulo_productos"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:text="@string/title_productos_list">
+    </TextView>
+    
+	<fragment 
+	    android:id="@+id/productos_list"
+	    android:name="co.wog.wogmoney.ProductosListFragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="16dp"
+    	android:layout_marginRight="16dp"
+    	android:layout_below="@+id/tv_titulo_productos"
+	    android:layout_marginTop="20dp"/>
+
+	
+<!-- 	Aqui poner el codigo para la publicidad -->
+	<LinearLayout
+        android:id="@+id/anuncio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+</RelativeLayout>

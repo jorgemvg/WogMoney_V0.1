@@ -1,0 +1,38 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
+import co.wog.monedero.model.ComboItem;
+import co.wog.monedero.utils.CombosData;
+
+public static class ContactenosFragment extends Fragment {
+
+	private EditText nombre;
+	private AutoCompleteTextView ciudad;
+	
+	public ContactenosFragment() {
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View rootView = inflater.inflate(R.layout.fragment_contactenos,
+				container, false);
+		
+		nombre = (EditText)rootView.findViewById(R.id.nombre);
+		ciudad = (AutoCompleteTextView) rootView.findViewById(R.id.ciudad);
+		
+		CombosData combosData = new CombosData();
+		ArrayAdapter<ComboItem> adapter = new ArrayAdapter<ComboItem>(getActivity(), android.R.layout.simple_dropdown_item_1line, combosData.getCiudades());
+		ciudad.setThreshold(2);
+		ciudad.setAdapter(adapter);
+		
+		return rootView;
+	}
+}

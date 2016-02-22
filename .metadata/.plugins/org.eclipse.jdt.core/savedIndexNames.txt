@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+D:\Proyectos\WogMoney_V0.1\.metadata\.plugins\org.eclipse.jdt.core
+2592546603.index
+2250969495.index
+4122973184.index
+1284074322.index
+587972621.index

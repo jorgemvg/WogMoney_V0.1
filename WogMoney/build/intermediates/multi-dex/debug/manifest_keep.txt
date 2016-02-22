@@ -1,0 +1,18 @@
+-keep class co.wog.monedero.LoginActivity { <init>(); }
+-keep class co.wog.monedero.MainActivity { <init>(); }
+-keep class co.wog.monedero.ActivacionMonederoActivity { <init>(); }
+-keep class co.wog.monedero.CarritoComprasActivity { <init>(); }
+-keep class co.wog.monedero.CompraListActivity { <init>(); }
+-keep class co.wog.monedero.CompraDetailActivity { <init>(); }
+-keep class co.wog.monedero.CarritoDeComprasListActivity { <init>(); }
+-keep class co.wog.monedero.CarritoDeComprasDetailActivity { <init>(); }
+-keep class co.wog.wogmoney.ProductosListActivity { <init>(); }
+-keep class co.wog.wogmoney.ProductosDetailActivity { <init>(); }
+-keep class co.wog.wogmoney.TransferenciasActivity { <init>(); }
+-keep class co.wog.wogmoney.ContactenosActivity { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

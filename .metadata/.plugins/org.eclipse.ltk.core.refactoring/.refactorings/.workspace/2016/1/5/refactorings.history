@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;MonederoCoop&apos; to &apos;WogMoney&apos;&#x0D;&#x0A;- Original element: &apos;MonederoCoop&apos;&#x0D;&#x0A;- Renamed element: &apos;MonederoCoop&apos;" description="Rename Java project &apos;MonederoCoop&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=MonederoCoop" name="WogMoney" references="false" stamp="1454081829912" version="1.0"/>
+</session>

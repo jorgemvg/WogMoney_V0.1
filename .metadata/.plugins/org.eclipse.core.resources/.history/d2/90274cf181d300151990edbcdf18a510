@@ -1,0 +1,49 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class CuentaBancariaFragment extends Fragment{
+	
+	public CuentaBancariaFragment () {
+		
+	}
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		//seteamos en true para que pueda entrar el metodo onOptionsItemSelected 
+		setHasOptionsMenu(true);
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+		View view = inflater.inflate(R.layout.frg_cuentas_bancarias, container, false);
+		
+		return view;
+		
+	}
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                
+            	if (getActivity().getSupportFragmentManager().getBackStackEntryCount() > 0) {
+            		getActivity().getSupportFragmentManager().popBackStackImmediate();
+            	}
+            	
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+}

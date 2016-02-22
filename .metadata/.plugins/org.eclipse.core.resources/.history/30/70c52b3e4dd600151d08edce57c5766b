@@ -1,0 +1,178 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import co.wog.monedero.model.CuentaBancariaModel;
+
+public class CuentaEntidadFragment extends Fragment {
+
+	
+	private final static String SAVEINST = "saveinstate";
+	
+	private final static String CAMPO_ORIGEN = "campo_origen";
+	private final static String CAMPO_DEST = "campo_dest";
+	
+	private CuentaBancariaModel.CuentaItem mItem;
+	
+	private TextView cuentaOrigenDesc;
+	private String cuentaOrigenId;
+	
+	private TextView cuentaDestinoDesc;
+	private String cuentaDestinoId;
+	
+	String campo ;
+	
+	private Bundle savedState = null;
+	
+	public CuentaEntidadFragment() {
+        // Required empty public constructor
+    }
+	
+	public static CuentaEntidadFragment newInstance(Bundle arguments){
+		CuentaEntidadFragment f = new CuentaEntidadFragment();
+        if(arguments != null){
+            f.setArguments(arguments);
+        }
+        return f;
+    }
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		//seteamos en true para que pueda entrar el metodo onOptionsItemSelected 
+		setHasOptionsMenu(true);
+		
+		if (getArguments() != null && getArguments().containsKey(TransferenciasActivity.CUENTA_BANCARIA_INDEX)) {
+			mItem = CuentaBancariaModel.LIST_CUENTAS.get( getArguments().getInt(TransferenciasActivity.CUENTA_BANCARIA_INDEX) );
+			campo = getArguments().getString(CuentaBancariaFragment.CAMPO);
+		}
+		
+		if ( savedInstanceState == null ) {
+			
+		}
+	}
+ 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+    	View view = inflater.inflate(R.layout.frg_cuentas_entidad, container, false);
+
+    	cuentaOrigenDesc = (TextView)view.findViewById(R.id.tv_cuentaOrigen);
+    	cuentaOrigenDesc.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				
+				CuentaBancariaFragment newFragment = new CuentaBancariaFragment();
+				Bundle args = new Bundle();
+				args.putString(CuentaBancariaFragment.CAMPO, CAMPO_ORIGEN);
+				newFragment.setArguments(args);
+				FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.transferencia_container, newFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+			}
+		});
+    	
+    	cuentaDestinoDesc = (TextView)view.findViewById(R.id.tv_cuentaDestino);
+    	cuentaDestinoDesc.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				
+				CuentaBancariaFragment newFragment = new CuentaBancariaFragment();
+				Bundle args = new Bundle();
+				args.putString(CuentaBancariaFragment.CAMPO, CAMPO_DEST);
+				newFragment.setArguments(args);
+				FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.transferencia_container, newFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+			}
+		});
+    	
+    	if (savedInstanceState != null && savedState == null ) {
+    		savedState = savedInstanceState.getBundle(SAVEINST );
+    	}
+    	if (savedState != null ) {
+    		cuentaOrigenDesc.setText( savedState.getCharSequence(CAMPO_ORIGEN) );
+    	}
+    	savedState = null;
+    		
+    	
+    	if (mItem != null) {
+    		if ( campo != null && campo.equals(CAMPO_ORIGEN) ) {
+    			cuentaOrigenDesc.setText(mItem.getNroCuenta());
+        		cuentaOrigenId = mItem.getCuentaId();
+    		} else if ( campo != null && campo.equals(CAMPO_DEST) ) {
+    			cuentaDestinoDesc.setText(mItem.getNroCuenta());
+        		cuentaDestinoId = mItem.getCuentaId();
+    		}
+    		
+		}
+    	
+    	return view;
+    }
+    
+    @Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onActivityCreated(savedInstanceState);
+		
+		TransferenciasActivity activity = (TransferenciasActivity)getActivity();
+		activity.textViewTitulo.setText( R.string.title_cuentas_entidad );
+	}
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                
+            	TransferenciasFragment newFragment = new TransferenciasFragment();
+    			FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.transferencia_container, newFragment);
+                transaction.commit();
+            	
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+	public void onDestroyView() {
+		// TODO Auto-generated method stub
+		super.onDestroyView();
+		
+		savedState = saveState();
+		
+		cuentaOrigenDesc = null;
+		
+	}
+    
+    private Bundle saveState () {
+    	Bundle state = new Bundle();
+    	state.putCharSequence(CAMPO_ORIGEN, cuentaOrigenDesc.getText());
+    	return state;
+    }
+
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+		
+		outState.putBundle( SAVEINST, savedState != null ? savedState : saveState() );
+	}
+    
+    
+
+}

@@ -1,0 +1,35 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class CuentaEntidadFragment extends Fragment {
+
+	public CuentaEntidadFragment() {
+        // Required empty public constructor
+    }
+
+ 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+    	View view = inflater.inflate(R.layout.frg_cuentas_entidad, container, false);
+
+    	return view;
+    }
+    
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home: //hago un case por si en un futuro agrego mas opciones
+                
+                
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}

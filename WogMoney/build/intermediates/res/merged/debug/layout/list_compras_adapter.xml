@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="20dp"
+    android:padding="2dp">
+      					
+				
+	<TextView
+	    android:id="@+id/col_descripcionCompra"
+	    android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_centerVertical="true"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:layout_marginRight="60dp"
+	    android:layout_marginTop="10dp"
+	    android:text="" />
+					
+				
+	<TextView 
+	    android:id="@+id/col_valorCompra"
+	    android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_centerVertical="true"
+   	 	android:gravity="right"
+    	android:layout_toLeftOf="@+id/img_next"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:text="" />
+
+	<ImageView
+	    android:id="@+id/img_next"
+	    android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+   	 	android:layout_alignParentRight="true"
+   	 	android:layout_marginRight="15dp"
+   	 	android:layout_marginLeft="20dp"
+        android:contentDescription="@string/verDetalle"
+        android:src="@drawable/go_to_rigth" />
+	
+</RelativeLayout>

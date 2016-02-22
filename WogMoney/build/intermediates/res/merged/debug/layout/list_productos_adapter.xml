@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="20dp"
+    android:padding="2dp">
+      					
+			
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_producto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="60dp"
+        android:layout_centerVertical="true" />
+				
+	<TextView 
+	    android:id="@+id/col_descProducto"
+	    android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_centerVertical="true"
+   	 	android:gravity="right"
+    	android:layout_toLeftOf="@+id/img_next"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:text="" />
+	
+	<TextView 
+	    android:id="@+id/col_valorProducto"
+	    android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_alignEnd="@+id/col_descProducto"
+   	 	android:layout_below="@+id/col_descProducto"
+    	android:layout_marginTop="15dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium" 
+	    android:text="" />
+
+	<ImageView
+        android:id="@+id/img_next"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+   	 	android:layout_alignParentRight="true"
+   	 	android:layout_marginLeft="15dp"
+        android:contentDescription="@string/verDetalle"
+        android:src="@drawable/go_to_rigth" />
+	
+</RelativeLayout>

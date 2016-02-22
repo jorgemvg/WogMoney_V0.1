@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="co.wog.wogmoney.ContactenosActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+    	android:id="@+id/tv_titulo_contactos"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:gravity="center"
+		android:text="">
+    </TextView>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container" />
+
+</LinearLayout>

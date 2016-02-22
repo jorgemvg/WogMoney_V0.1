@@ -1,0 +1,71 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.NavUtils;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class CuentaEntidadFragment extends Fragment {
+
+	public CuentaEntidadFragment() {
+        // Required empty public constructor
+    }
+
+	
+ 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+    	View view = inflater.inflate(R.layout.frg_cuentas_entidad, container, false);
+
+    	return view;
+    }
+    
+
+    
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case android.R.id.home:
+//                
+//            	TransferenciasFragment newFragment = new TransferenciasFragment();
+//    			FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+//                transaction.replace(R.id.transferencia_container, newFragment);
+//                transaction.commit();
+//            	
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
+
+
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		 switch (item.getItemId()) {
+         case android.R.id.home:
+             
+         	TransferenciasFragment newFragment = new TransferenciasFragment();
+ 			FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+             transaction.replace(R.id.transferencia_container, newFragment);
+             transaction.commit();
+         	
+             return true;
+         default:
+             return super.onContextItemSelected(item);
+		 }
+	}
+
+
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		setHasOptionsMenu(true);
+	}
+}

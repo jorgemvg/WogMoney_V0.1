@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="co.wog.monedero.CarritoDeComprasListActivity"
+    tools:layout="@android:layout/list_content" >
+    
+	<TextView
+		android:id="@+id/label_tituloDetalle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/shadow_left"
+		android:lines="4"
+		android:ems="12"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:text="@string/label_carritoCompras"
+		android:textStyle="bold" />
+	
+	<fragment
+	    android:id="@+id/carritodecompras_list"
+	    android:name="co.wog.monedero.CarritoDeComprasListFragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_marginTop="40dp"/>
+
+</LinearLayout>

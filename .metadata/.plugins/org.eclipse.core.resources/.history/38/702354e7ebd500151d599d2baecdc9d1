@@ -1,0 +1,155 @@
+package co.wog.wogmoney;
+
+import co.wog.monedero.CarritoDeComprasDetailActivity;
+import co.wog.monedero.CarritoDeComprasDetailFragment;
+import co.wog.monedero.MainActivity;
+import co.wog.monedero.MensajeExitoErrorFragment;
+import co.wog.monedero.model.CuentaBancariaModel.CuentaItem;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
+
+public class TransferenciasActivity extends ActionBarActivity implements CuentaBancariaFragment.OnHeadlineSelectedListener {
+
+	public static final String FRG_CUENTA_ENTIDAD = "cuentaEntidadFragment";
+	public static final String FRG_REGISTRAR_CUENTAS= "registrarCuentaFragment";
+	
+	public static final String CUENTA_BANCARIA_INDEX = "cuentaBancariaIndex";
+	
+	public static final String C_MODO = "modo";
+	public static final String C_SHOW_TWO_FRAGMENTS  = "dosFragmentos" ;
+	
+	public static final int C_VISUALIZAR = 551 ;
+	public static final int C_CREAR = 552 ;
+	public static final int C_EDITAR = 553 ;
+	
+	public static final String CUENTA_ID = "cuentaId";
+	public static final String DESC_CUENTA = "descCuenta";
+	public static final String NRO_CUENTA = "nroCuenta";
+	
+	public static final String CAMPO = "campo";
+	
+	public TextView textViewTitulo;
+	
+	public boolean twoFragments ;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_transferencias);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+			
+		textViewTitulo = (TextView)findViewById(R.id.tv_titulo_transferencias);
+		
+		twoFragments = false;
+		if ( getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ) {
+			twoFragments = true;
+//			finish();
+//			return;
+		}
+			
+		if (!twoFragments && savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+				.add(R.id.transferencia_container, new TransferenciasFragment()).commit();
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.transferencias, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		switch (item.getItemId()) {
+			case R.id.action_settings:
+				return true;
+			case android.R.id.home:
+	            return false;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+
+	}
+	
+	public void cambiarFragmento ( String fragmento ) {
+		
+		CuentaEntidadFragment cuentasEntidadFrg = (CuentaEntidadFragment)
+                getSupportFragmentManager().findFragmentById(R.layout.frg_cuentas_entidad);
+		
+		if ( cuentasEntidadFrg != null ) {
+		
+			//Si el fragmento existe estamos en un una interfaz con dos paneles
+		} else {
+		
+			if ( fragmento.equals(FRG_CUENTA_ENTIDAD) ) {
+			
+				CuentaEntidadFragment newFragment = new CuentaEntidadFragment();
+			
+				FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+			
+				// Reemplazamos lo que haya en la vista fragment_container con este fragmento,
+				// y añadimos la transacción a la pila de vuelta para que el usuario pueda volver
+				transaction.replace(R.id.transferencia_container, newFragment);
+				transaction.addToBackStack(null);
+
+				// Aplica la transacción
+				transaction.commit();
+			
+			} else if ( fragmento.equals(FRG_REGISTRAR_CUENTAS) ) {
+				
+				RegistrarCuentaFragment newFragment = RegistrarCuentaFragment.newInstance( C_CREAR, twoFragments );
+				
+				FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+			
+				// Reemplazamos lo que haya en la vista fragment_container con este fragmento,
+				// y añadimos la transacción a la pila de vuelta para que el usuario pueda volver
+				transaction.replace(R.id.transferencia_container, newFragment);
+				transaction.addToBackStack(null);
+
+				// Aplica la transacción
+				transaction.commit();
+			}
+		}
+		
+	}
+	
+	public void onCuentaBancariaSelected(int position, String campoValue) {
+
+		Bundle arguments = new Bundle();
+		arguments.putInt(CUENTA_BANCARIA_INDEX, position);
+		arguments.putString(CuentaBancariaFragment.CAMPO, campoValue);
+		CuentaEntidadFragment fragment = new CuentaEntidadFragment();
+		fragment.setArguments(arguments);
+		getSupportFragmentManager().beginTransaction().replace(R.id.transferencia_container, fragment).commit();
+		
+    }
+	
+	public void cambiarFragmentoMensaje ( boolean activado, String codigoMonedero ) {
+		
+		MensajeExitoErrorFragment nuevoFragmento = new MensajeExitoErrorFragment();
+		Bundle args = new Bundle();
+		args.putBoolean(MainActivity.C_ACTIVADO, activado);
+		args.putString(MainActivity.C_COD_MONEDERO, codigoMonedero);
+		nuevoFragmento.setArguments(args);
+		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+		//No quiero que vaya a el fragmento anterior. Por lo tanto se ira a la pantalla de inicio.
+//		transaction.addToBackStack(null);
+		transaction.replace(R.id.transferencia_container, nuevoFragmento);
+		transaction.commit();
+		
+	}
+
+}

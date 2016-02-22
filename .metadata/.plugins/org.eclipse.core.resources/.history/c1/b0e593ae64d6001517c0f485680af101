@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context="co.wog.wogmoney.ContactenosActivity$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_nombre_titular2" />
+    
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:maxLength="50"
+        android:hint="@string/label_nombre"
+        android:ems="10"
+        android:inputType="text" />
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_ciudad" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ciudad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:ems="10"
+        android:hint="@string/label_ciudad" >
+    </AutoCompleteTextView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_telefono" />
+    
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:maxLength="10"
+        android:hint="@string/label_telefono"
+        android:ems="10"
+        android:inputType="phone" />
+    
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_correo" />
+    
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:maxLength="10"
+        android:hint="@string/label_correo"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_asunto" />
+    
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView5"
+        android:maxLength="10"
+        android:hint="@string/label_asunto"
+        android:ems="10"
+        android:maxLines="2"
+        android:lines="2"
+        android:inputType="textMultiLine" />
+    
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_mensaje" />
+    
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView6"
+        android:maxLength="10"
+        android:hint="@string/label_mensaje"
+        android:ems="10"
+        android:maxLines="4"
+        android:lines="4"
+        android:inputType="textMultiLine" />
+    
+    <Button 
+	   android:id="@+id/btnEnviar"
+	   android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/mensaje" 
+       android:layout_marginTop="35dp"
+       android:background="#0B610B"
+       android:text="@string/boton_enviar"/>
+    
+</RelativeLayout>
+
+</ScrollView>

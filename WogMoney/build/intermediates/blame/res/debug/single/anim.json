@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\anim\\abc_slide_out_top.xml"
+    }
+]

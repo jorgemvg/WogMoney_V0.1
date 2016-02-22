@@ -1,0 +1,2 @@
+include ':WogMoney'
+include ':appcompat_v7'

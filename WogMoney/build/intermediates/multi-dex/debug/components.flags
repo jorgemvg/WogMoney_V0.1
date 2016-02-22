@@ -1,0 +1,70 @@
+-injars 'D:\Proyectos\WogMoney_V0.1\WogMoney\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\Proyectos\WogMoney_V0.1\WogMoney\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\jvidal\AppData\Local\Android\sdk\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontwarn
+-printconfiguration 'D:\Proyectos\WogMoney_V0.1\WogMoney\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class co.wog.monedero.LoginActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.MainActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.ActivacionMonederoActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.CarritoComprasActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.CompraListActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.CompraDetailActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.CarritoDeComprasListActivity {
+    <init>();
+}
+
+-keep class co.wog.monedero.CarritoDeComprasDetailActivity {
+    <init>();
+}
+
+-keep class co.wog.wogmoney.ProductosListActivity {
+    <init>();
+}
+
+-keep class co.wog.wogmoney.ProductosDetailActivity {
+    <init>();
+}
+
+-keep class co.wog.wogmoney.TransferenciasActivity {
+    <init>();
+}
+
+-keep class co.wog.wogmoney.ContactenosActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

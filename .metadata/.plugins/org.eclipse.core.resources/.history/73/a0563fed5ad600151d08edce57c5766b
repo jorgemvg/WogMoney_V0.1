@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.wog.wogmoney"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="co.wog.monedero.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.wog.monedero.MainActivity"
+            android:label="@string/label_titulo" >
+        </activity>
+        <activity
+            android:name="co.wog.monedero.ActivacionMonederoActivity"
+            android:label="@string/title_activity_activacion_monedero" >
+        </activity>
+        <activity
+            android:name="co.wog.monedero.CarritoComprasActivity"
+            android:label="@string/title_activity_carrito_compras" >
+        </activity>
+        <activity
+            android:name="co.wog.monedero.CompraListActivity"
+            android:label="@string/title_compra_list" >
+        </activity>
+        <activity
+            android:name="co.wog.monedero.CompraDetailActivity"
+            android:label="@string/title_compra_detail"
+            android:parentActivityName="co.wog.monedero.CompraListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.wog.monedero.CompraListActivity" />
+        </activity>
+        <activity
+            android:name="co.wog.monedero.CarritoDeComprasListActivity"
+            android:label="@string/title_carritodecompras_list" >
+        </activity>
+        <activity
+            android:name="co.wog.monedero.CarritoDeComprasDetailActivity"
+            android:label="@string/title_carritodecompras_detail"
+            android:parentActivityName="co.wog.monedero.CarritoDeComprasListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.wog.monedero.CarritoDeComprasListActivity" />
+        </activity>
+        <activity
+            android:name="co.wog.wogmoney.ProductosListActivity"
+            android:label="@string/title_productos_list" >
+        </activity>
+        <activity
+            android:name="co.wog.wogmoney.ProductosDetailActivity"
+            android:label="@string/title_productos_detail"
+            android:parentActivityName="co.wog.wogmoney.ProductosListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.wog.wogmoney.ProductosListActivity" />
+        </activity>
+        <activity
+            android:name="co.wog.wogmoney.TransferenciasActivity"
+            android:label="@string/label_titulo" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,165 @@
+package co.wog.wogmoney;
+
+import co.wog.adapter.ConsultaComprasAdapter;
+import co.wog.monedero.CompraListFragment.Callbacks;
+import co.wog.monedero.model.CompraModel;
+import co.wog.monedero.model.CuentaBancariaModel;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.ListFragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
+public class CuentaBancariaFragment extends ListFragment {
+	
+	private String fragmento;
+	private String campo;
+	
+	public CuentaBancariaFragment () {
+		
+	}
+	
+	private static final String STATE_ACTIVATED_POSITION = "activated_position";
+	private int mActivatedPosition = ListView.INVALID_POSITION;
+
+	/**
+	 * A callback interface that all activities containing this fragment must
+	 * implement. This mechanism allows activities to be notified of item
+	 * selections.
+	 */
+	public interface Callbacks {
+		/**
+		 * Callback for when an item has been selected.
+		 */
+		public void onItemSelected(String id);
+	}
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		//seteamos en true para que pueda entrar el metodo onOptionsItemSelected 
+		setHasOptionsMenu(true);
+		
+		//Cargamos la lista de cuentas bancarias
+        CompraModel.consultarListaCompras();
+        
+        ConsultaComprasAdapter comprasAdapter = new ConsultaComprasAdapter(getActivity(), CompraModel.LIST_COMPRAS);
+		
+		setListAdapter(comprasAdapter);
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+		View view = inflater.inflate(R.layout.frg_cuentas_bancarias, container, false);
+		
+		return view;
+		
+	}
+	
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
+
+		// Restore the previously serialized activated item position.
+		if (savedInstanceState != null
+				&& savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
+			setActivatedPosition(savedInstanceState
+					.getInt(STATE_ACTIVATED_POSITION));
+		}
+	}
+	
+	@Override
+	public void onListItemClick(ListView listView, View view, int position,
+			long id) {
+		super.onListItemClick(listView, view, position, id);
+
+		// Notify the active callbacks interface (the activity, if the
+		// fragment is attached to one) that an item has been selected.
+//		mCallbacks.onItemSelected( CuentaBancariaModel.LIST_CUENTAS.get(position).getCuentaId() );
+		
+		if ( fragmento != null && fragmento.equals(TransferenciasActivity.FRG_CUENTA_ENTIDAD) ) {
+		
+			CuentaEntidadFragment newFragment = new CuentaEntidadFragment();
+			Bundle args = new Bundle();
+			args.putString(TransferenciasActivity.CUENTA_ID,  CuentaBancariaModel.LIST_CUENTAS.get(position).getCuentaId() );
+			args.putString(TransferenciasActivity.DESC_CUENTA,  CuentaBancariaModel.LIST_CUENTAS.get(position).getDescripcion() );
+			args.putString(TransferenciasActivity.NRO_CUENTA,  CuentaBancariaModel.LIST_CUENTAS.get(position).getNroCuenta() );
+			args.putString(TransferenciasActivity.NRO_CUENTA,  CuentaBancariaModel.LIST_CUENTAS.get(position).getNroCuenta() );
+			args.putString(TransferenciasActivity.CAMPO,  getCampo() );
+			newFragment.setArguments(args);
+			FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+	        transaction.replace(R.id.transferencia_container, newFragment);
+	        
+	        transaction.commit();
+		}
+	}
+
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		if (mActivatedPosition != ListView.INVALID_POSITION) {
+			// Serialize and persist the activated item position.
+			outState.putInt(STATE_ACTIVATED_POSITION, mActivatedPosition);
+		}
+	}
+
+	/**
+	 * Turns on activate-on-click mode. When this mode is on, list items will be
+	 * given the 'activated' state when touched.
+	 */
+	public void setActivateOnItemClick(boolean activateOnItemClick) {
+		// When setting CHOICE_MODE_SINGLE, ListView will automatically
+		// give items the 'activated' state when touched.
+		getListView().setChoiceMode(
+				activateOnItemClick ? ListView.CHOICE_MODE_SINGLE
+						: ListView.CHOICE_MODE_NONE);
+	}
+
+	private void setActivatedPosition(int position) {
+		if (position == ListView.INVALID_POSITION) {
+			getListView().setItemChecked(mActivatedPosition, false);
+		} else {
+			getListView().setItemChecked(position, true);
+		}
+
+		mActivatedPosition = position;
+	}
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                
+            	if (getActivity().getSupportFragmentManager().getBackStackEntryCount() > 0) {
+            		getActivity().getSupportFragmentManager().popBackStackImmediate();
+            	}
+            	
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+	public String getFragmento() {
+		return fragmento;
+	}
+
+	public void setFragmento(String fragmento) {
+		this.fragmento = fragmento;
+	}
+
+	public String getCampo() {
+		return campo;
+	}
+
+	public void setCampo(String campo) {
+		this.campo = campo;
+	}
+
+}

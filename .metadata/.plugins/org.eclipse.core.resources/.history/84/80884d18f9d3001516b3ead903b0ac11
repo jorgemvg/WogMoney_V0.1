@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WOG money</string>
+    <string name="label_titulo">Cooperativa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mensaje_bienvenida_usuario">Bienvenido @nombre@, su última conexión fue el @fecha@ a la @hora@</string>
+    <string name="error_incorrect_password">La clave es incorrecta</string>
+    <string name="error_field_required">El campo es requerido</string>
+    <string name="error_monto_mayor_cero">El monto debe ser mayor a cero.</string>
+    <string name="warning_debe_ingresar_criterio_busqueda">Debe ingresar un criterio de busqueda.</string>
+    <string name="boton_continuar">Continuar</string>
+    <string name="boton_confirmar">Confirmar</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_buscar">Buscar</string>
+    <string name="boton_pagar">Pagar</string>
+    <string name="label_no_data_foud">No se encontraron registros.</string>
+    <string name="activarTerminal">Activar Terminal</string>
+    <string name="activar">Activar</string>
+    <string name="menu">Menu</string>
+    <string name="label_monederolNro">Monedero Número:</string>
+    <string name="label_activacionExitosa">Activación Existosa</string>
+    <string name="label_pagoExitoso">Pago Existoso</string>
+    <string name="label_activacionError">Error en la Activación</string>
+    <string name="label_pagoError">Error en el Pago</string>
+    <string name="label_confirmacionNumero">Confirmación Número</string>
+    <string name="codigo_barras">Código de Barras</string>
+    <string name="label_carritoDeCompras">Carrito de Compras</string>
+    <string name="label_consultarCompras">Consultar Compras</string>
+    <string name="label_cuentaCoop">Cuenta .Coop</string>
+    <string name="label_cedula">Cedula</string>
+    <string name="label_clave">Clave</string>
+    <string name="label_comercio">Comercio</string>
+    <string name="label_montoTotalCompra">Monto Total de la Compra</string>
+    <string name="label_formaPago">Forma de Pago</string>
+    <string name="label_referencia">Referencia</string>
+    <string name="label_fecha">Fecha</string>
+    <string name="label_montoCompra">Monto de la Compra</string>
+    <string name="label_detalleCompra">DETALLE DE LA COMPRA</string>
+    <string name="label_ultimasCompras">ÚLTIMAS COMPRAS</string>
+    <string name="label_carritoCompras">CARRITO DE COMPRAS</string>
+    <string name="verDetalle">Ver Detalle</string>
+    <string name="desc_imagen">Imagen</string>
+    <string name="label_cuentaOrigen">Cuenta Origen</string>
+    <string name="label_introduzcaNroCuenta">Introduzca número de cuenta.</string>
+    <string name="titulo_cuentasBancarias">Cuentas Bancarias</string>
+    
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">WOG money</string>
+    <string name="label_usuario">Usuario</string>
+    <string name="label_password">Clave</string>
+    <string name="action_sign_in_short">Ingresando</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Ingresando&#8230;</string>
+    <string name="title_activity_activacion_monedero">ActivacionMonedero</string>
+    <string name="title_activity_carrito_compras">Carrito de Compras</string>
+    <string name="title_compra_list">Compras</string>
+    <string name="title_compra_detail">Compra Detail</string>
+    <string name="title_carritodecompras_list">CarritoDeCompras</string>
+    <string name="title_carritodecompras_detail">CarritoDeCompras Detail</string>
+
+    <!-- Strings opciones Menu -->
+    <string name="wog_money">WOG money</string>
+    <string name="opcion_productos">Productos</string>
+    <string name="opcion_transferencias">Transferencias</string>
+    <string name="opcion_pagos">Pagos</string>
+    <string name="opcion_tarjetaWog">Tarjeta WOG</string>
+    <string name="opcion_carritoDeCompras">Carrito de Compras</string>
+    <string name="opcion_sitiosDeInteres">Sitios de Interes</string>
+    <string name="opcion_contactenos">Contáctenos</string>
+    <string name="opcion_mensajes">Mensajes</string>
+    <string name="opcion_tienda">Tienda</string>
+    <string name="opcion_configuracion">Configuración</string>
+    <string name="opcion_salir">Salir</string>
+    <string name="title_productos_list">Productos</string>
+    <string name="title_productos_detail">Productos</string>
+    <string name="title_activity_transferencias">Transferencias</string>
+
+</resources>

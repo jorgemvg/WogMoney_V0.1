@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.wog.wogmoney.ProductosListActivity" >
+
+    <TextView
+    	android:id="@+id/tv_titulo_productos"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:gravity="center"
+		android:layout_alignParentTop="true"
+		android:text="@string/title_productos_list">
+    </TextView>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/tv_titulo_productos"
+	    android:baselineAligned="false"
+	    android:divider="?android:attr/dividerHorizontal"
+	    android:orientation="horizontal"
+	    android:showDividers="middle" >
+	
+	    <fragment
+	        android:id="@+id/productos_list"
+	        android:name="co.wog.wogmoney.ProductosListFragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        tools:layout="@android:layout/list_content" />
+	
+	    <FrameLayout
+	        android:id="@+id/productos_detail_container"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="3" />
+
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_compra_twopane.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_compra_twopane.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_productos_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_productos_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_compra_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_compra_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_activacion_monedero.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_activacion_monedero.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\frg_mensaje_confirmacion_venta.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\frg_mensaje_confirmacion_venta.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\list_cuentas_bancarias_adapter.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\list_cuentas_bancarias_adapter.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_activacion_monedero.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_activacion_monedero.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transferencias.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_transferencias.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\list_consulta_compras_adapter.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\list_consulta_compras_adapter.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_selected_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\spinner_selected_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_home.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contactenos.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_contactenos.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_carritodecompras_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_carritodecompras_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\list_compras_adapter.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\list_compras_adapter.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_productos_list.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_productos_list.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_compra_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_compra_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_sub_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\drawer_list_sub_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_carritodecompras_list.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_carritodecompras_list.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_transferencias.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_transferencias.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contactenos.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_contactenos.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tabbar.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_tabbar.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_compra_list.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_compra_list.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\frg_cuentas_entidad.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\frg_cuentas_entidad.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\transferencias_adapter.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\transferencias_adapter.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tab.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_tab.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\frg_mensaje_exito_error.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\frg_mensaje_exito_error.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_productos_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_productos_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_overlay.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_decor_overlay.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_productos_twopane.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_productos_twopane.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\frg_cuentas_bancarias.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\frg_cuentas_bancarias.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_carritodecompras_detail.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_carritodecompras_detail.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_include.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_bar_decor_include.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_carritodecompras_twopane.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\activity_carritodecompras_twopane.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\exploded-aar\\WogMoney_V0.1\\appcompat_v7\\unspecified\\res\\layout\\abc_action_mode_close_item.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\list_productos_adapter.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\list_productos_adapter.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_registrar_cuentas.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout\\fragment_registrar_cuentas.xml"
+    }
+]

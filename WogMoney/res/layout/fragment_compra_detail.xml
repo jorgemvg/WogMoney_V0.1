@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:padding="10dp" 
+	    android:background="@color/white">
+	
+	    <TextView
+			android:id="@+id/label_tituloDetalle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:background="@drawable/shadow_left"
+			android:lines="4"
+			android:ems="12"
+			android:layout_marginTop="10dp"
+			android:gravity="center"
+			android:text="@string/label_detalleCompra"
+			android:textStyle="bold" />
+	    
+			<TextView 
+				android:id="@+id/label_NombreComercio" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content" 
+	 			android:layout_marginTop="40dp"
+	 			android:text="@string/label_comercio" 
+	 			android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/NombreComercio" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft="20dp"
+	 			android:text=""  />
+			
+			<TextView 
+				android:id="@+id/label_FechaCompra" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginTop="10dp"
+	 			android:text="@string/label_fecha"
+	 			android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+			    android:id="@+id/FechaCompra"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="20dp"
+			    android:text=""/>
+	
+			<TextView 
+				android:id="@+id/label_MontoCompra"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginTop="10dp"
+	 			android:text="@string/label_montoCompra"
+	 			android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/MontoCompra" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft="20dp"
+	 			android:text=""  />
+	
+			<TextView 
+				android:id="@+id/label_FormaPago" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginTop="10dp"
+	 			android:text="@string/label_formaPago" 
+	 			android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/FormaPago" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft="20dp"
+	 			android:text=""  />
+			
+			<TextView 
+				android:id="@+id/label_Referencia" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginTop="10dp"
+	 			android:text="@string/label_referencia" 
+	 			android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/Referencia" 
+	 			android:layout_width="wrap_content" 
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft="20dp"
+	 			android:text=""  />
+
+	</LinearLayout>
+</ScrollView>

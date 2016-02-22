@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <TextView
+    	android:id="@+id/tv_titulo_transferencias"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:gravity="center"
+		android:layout_alignParentTop="true"
+		android:text="">
+    </TextView>
+    
+    <fragment 
+        android:name="co.wog.wogmoney.TransferenciasFragment"
+        android:id="@+id/GridTransferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    
+    <FrameLayout
+        android:id="@+id/transferencia_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/GridTransferencias" />
+
+</RelativeLayout>
+

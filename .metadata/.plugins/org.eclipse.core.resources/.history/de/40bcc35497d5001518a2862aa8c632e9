@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_nombre_titular2" />
+
+    <EditText
+        android:id="@+id/nombre_titular"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:maxLength="30"
+        android:hint="@string/label_nombreTitular"
+        android:ems="10"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_tipo_identificacion2" />
+
+    <Spinner
+        android:id="@+id/tipo_identificacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nombre_titular"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/tipo_identificacion"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_numero_documento" />
+
+    <EditText
+        android:id="@+id/numero_documento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nombre_titular"
+        android:layout_below="@+id/imageView3"
+        android:maxLength="30"
+        android:hint="@string/label_numeroDocumento"
+        android:ems="10"
+        android:inputType="number" >
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/numero_documento"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_banco" />
+
+    <Spinner
+        android:id="@+id/banco"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numero_documento"
+        android:layout_below="@+id/imageView4" />
+
+</RelativeLayout>

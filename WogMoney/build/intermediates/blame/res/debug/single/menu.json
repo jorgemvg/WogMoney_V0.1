@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\login.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\login.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\carrito_compras.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\carrito_compras.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\contactenos.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\contactenos.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\transferencias.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\transferencias.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\menu\\activacion_monedero.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\menu\\activacion_monedero.xml"
+    }
+]

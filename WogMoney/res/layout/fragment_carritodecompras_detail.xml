@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white">
+
+		<TextView 
+			android:id="@+id/label_NombreComercio" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content" 
+ 			android:text="@string/label_comercio" 
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/CarritoDeCompras_NombreComercio"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="15"
+			android:maxLength="12"
+			android:enabled="false"
+			android:inputType="text" />
+
+		<TextView 
+			android:id="@+id/label_MontoTotal" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content" 
+ 			android:text="@string/label_montoTotalCompra" 
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/CarritoDeCompras_MontoTotal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="15"
+			android:maxLength="10"
+			android:enabled="false"
+			android:inputType="number" />
+
+		<TextView 
+			android:id="@+id/label_FormaPago"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:text="@string/label_formaPago"
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Spinner 
+		    android:id="@+id/CarritoDeCompras_FormaPago" 
+ 			android:layout_width="match_parent"
+ 			android:layout_height="wrap_content"
+ 			android:ems="10" />
+
+		<TextView 
+			android:id="@+id/label_Referencia" 
+ 			android:layout_width="wrap_content" 
+ 			android:layout_height="wrap_content" 
+ 			android:text="@string/label_referencia" 
+ 			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+		    android:id="@+id/CarritoDeCompras_Referencia"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="top"
+		    android:lines="2"
+		    android:inputType="textMultiLine"
+   			android:scrollHorizontally="false" 
+		    android:maxLength="200" />
+		
+		<Button
+			android:id="@+id/btnPagar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:ems="10"
+			android:text="@string/boton_pagar" />
+		
+		<Button
+			android:id="@+id/btnConfirmar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:text="@string/boton_confirmar" />
+
+</LinearLayout>

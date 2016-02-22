@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.wog.wogmoney.TransferenciasActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+    	android:id="@+id/tv_titulo_transferencias"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:text="">
+    </TextView>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_titulo_transferencias"
+        android:id="@+id/transferencia_container" />
+
+    <!-- 	Aqui poner el codigo para la publicidad -->
+	<LinearLayout
+        android:id="@+id/anuncio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+    
+</RelativeLayout>
+

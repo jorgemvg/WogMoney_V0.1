@@ -1,0 +1,67 @@
+package co.wog.adapter;
+
+import java.text.NumberFormat;
+import java.util.List;
+import java.util.Locale;
+
+import co.wog.wogmoney.R;
+import co.wog.monedero.model.CompraModel;
+import co.wog.monedero.model.CompraModel.CompraItem;
+import co.wog.monedero.model.CuentaBancariaModel;
+import co.wog.monedero.model.CuentaBancariaModel.CuentaItem;
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class CuentaBancariaAdapter extends ArrayAdapter<CuentaBancariaModel> {
+
+	Activity context;
+	List lista;
+	
+	public CuentaBancariaAdapter(Activity context, List lista) {
+		super(context, R.layout.list_cuentas_bancarias_adapter, lista );
+		
+		this.lista = lista;
+		this.context = context;
+		
+	}
+	
+	
+	public CuentaBancariaAdapter(Context context, int resource, List<CuentaBancariaModel> objects) {
+		super(context, resource, objects);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		
+		LayoutInflater inflater = context.getLayoutInflater();
+		
+		View item = inflater.inflate(R.layout.list_cuentas_bancarias_adapter, null);
+		
+		//this.getItem(position);
+		
+		CuentaItem cuenta = (CuentaItem)lista.get(position);
+
+		TextView columna1 = (TextView)item.findViewById(R.id.col_descripcionCuenta);
+		columna1.setText(cuenta.getDescripcion());
+
+		TextView columna2 = (TextView)item.findViewById(R.id.col_nroCuenta);
+		columna2.setText(cuenta.getNroCuenta());
+		
+		ListView lvDocument = (ListView) parent;
+        if (lvDocument.isItemChecked(position)) {
+        	item.setBackgroundDrawable( context.getResources().getDrawable(R.color.white));               
+        } else {
+        	item.setBackgroundDrawable(context.getResources().getDrawable(android.R.color.transparent));               
+        }
+		
+		return item;
+	}
+	
+}

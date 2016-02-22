@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_productos_list.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout-land\\activity_productos_list.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_transferencias.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout-land\\activity_transferencias.xml"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_carrito_compras.xml",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\layout-land\\activity_carrito_compras.xml"
+    }
+]

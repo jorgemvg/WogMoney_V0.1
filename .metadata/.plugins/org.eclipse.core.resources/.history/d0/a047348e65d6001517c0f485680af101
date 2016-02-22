@@ -1,0 +1,43 @@
+package co.wog.monedero.utils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import co.wog.monedero.model.ComboItem;
+
+public class CombosData {
+
+	public List<ComboItem> getTiposdeIdentificacion () {
+		
+		List lista = new ArrayList<ComboItem>();
+
+		lista.add( new ComboItem("1", "Cédula de Ciudadanía") );
+		lista.add( new ComboItem("2", "Cédula de Extranjeria") );
+		lista.add( new ComboItem("3", "NIT") );
+		
+		return lista;
+	}
+	
+	public List<ComboItem> getBancos () {
+		
+		List lista = new ArrayList<ComboItem>();
+
+		lista.add( new ComboItem("1", "BANCOLOMBIA") );
+		lista.add( new ComboItem("2", "BBVA") );
+		lista.add( new ComboItem("3", "COLPATRIA") );
+		lista.add( new ComboItem("4", "DAVIVIENDA") );
+		
+		return lista;
+	}
+	
+	public List<ComboItem> getTiposDeCuenta () {
+		
+		List lista = new ArrayList<ComboItem>();
+
+		lista.add( new ComboItem("1", "Cuenta de Ahorros") );
+		lista.add( new ComboItem("2", "Cuenta Corriente") );
+		
+		return lista;
+	}
+	
+}

@@ -1,0 +1,75 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class TransferenciasActivity extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_transferencias);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+//		if (savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.transferencia_container, new TransferenciasFragment()).commit();
+//		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.transferencias, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		switch (item.getItemId()) {
+			case R.id.action_settings:
+				return true;
+			case android.R.id.home:
+	            return false;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+
+	}
+	
+	public void cambiarFragmento () {
+		
+		CuentaEntidadFragment cuentasEntidadFrg = (CuentaEntidadFragment)
+                getSupportFragmentManager().findFragmentById(R.layout.frg_cuentas_entidad);
+		
+		if ( cuentasEntidadFrg != null ) {
+		
+			//Si el fragmento existe estamos en un una interfaz con dos paneles
+		} else {
+		
+			CuentaEntidadFragment newFragment = new CuentaEntidadFragment();
+			
+			FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+			
+			// Reemplazamos lo que haya en la vista fragment_container con este fragmento,
+            // y añadimos la transacción a la pila de vuelta para que el usuario pueda volver
+            transaction.replace(R.id.transferencia_container, newFragment);
+            transaction.addToBackStack(null);
+
+            // Aplica la transacción
+            transaction.commit();
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,87 @@
+package co.wog.wogmoney;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
+import co.wog.adapter.TransferenciaAdapter;
+
+public class TransferenciasFragment extends Fragment {
+
+	public TransferenciasFragment() {
+        // Required empty public constructor
+    }
+
+	public static String [] prgmNameList={"Cuentas de la Entidad","Cuentas Bancarias","Registrar Cuentas"};
+    public static int [] prgmImages={R.drawable.ic_account_balance,R.drawable.ic_user_data_account,R.drawable.ic_add_account};    
+    
+    @Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		//seteamos en true para que pueda entrar el metodo onOptionsItemSelected 
+		setHasOptionsMenu(true);
+	}
+    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+    	View view = inflater.inflate(R.layout.fragment_transferencias, container, false);
+    	
+    	GridView gv=(GridView) view.findViewById(R.id.gridView_transfer);
+    	gv.setAdapter(new TransferenciaAdapter(getActivity(), prgmNameList,prgmImages));
+    	
+    	gv.setOnItemClickListener(new OnItemClickListener() {
+
+    		TransferenciasActivity activity = (TransferenciasActivity)getActivity();
+    		
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+				if ( position == 0 ) {
+					activity.cambiarFragmento( TransferenciasActivity.FRG_CUENTA_ENTIDAD );
+				} else if ( position == 1 ) {
+					
+				} if ( position == 2 ) {
+					activity.cambiarFragmento( TransferenciasActivity.FRG_REGISTRAR_CUENTAS);
+				}
+				
+			}
+    		
+		});
+    	
+    	return view;
+    }
+    
+    @Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onActivityCreated(savedInstanceState);
+		
+		TransferenciasActivity activity = (TransferenciasActivity)getActivity();
+		activity.textViewTitulo.setText( R.string.title_activity_transferencias );
+	}
+    
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.action_settings:
+				return true;
+			case android.R.id.home:
+				getActivity().finish();
+	            return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+
+	}
+
+	
+	
+}

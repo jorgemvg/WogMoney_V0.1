@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.wog.wogmoney.TransferenciasActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+    	android:id="@+id/tv_titulo_transferencias"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp" 
+		android:background="#5FB404"
+		android:gravity="center"
+		android:text="">
+    </TextView>
+    
+    <fragment 
+        android:name="co.wog.wogmoney.TransferenciasFragment"
+        android:id="@+id/GridTransferencias"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    
+    <FrameLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/transferencia_container" />
+
+</LinearLayout>
+

@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_map.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_map.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_payment.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_payment.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cash_register.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_cash_register.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_sign_up.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_sign_up.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_register_account.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_register_account.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_search_plus_green.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_search_plus_green.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_sales_report.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_sales_report.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_shopping.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_shopping.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_shopping_cart.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_shopping_cart.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_solicitud_credito.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_solicitud_credito.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_credit_card.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_credit_card.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_megaphone.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_megaphone.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_product_list.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_product_list.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_nombre_titular2.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_nombre_titular2.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_wallet.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_wallet.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_tipo_identificacion2.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_tipo_identificacion2.png"
+    },
+    {
+        "merged": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_money_transfer.png",
+        "source": "D:\\Proyectos\\WogMoney_V0.1\\WogMoney\\res\\drawable-xxhdpi\\ic_money_transfer.png"
+    }
+]

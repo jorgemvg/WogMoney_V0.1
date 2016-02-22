@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_options">
+	    <item>@string/opcion_productos</item>
+        <item>@string/opcion_transferencias</item>
+        <item>@string/opcion_pagos</item>
+        <item>@string/opcion_tarjetaWog</item>
+        <item>@string/opcion_carritoDeCompras</item>
+        <item>@string/opcion_sitiosDeInteres</item>
+        <item>@string/opcion_contactenos</item>
+        <item>@string/opcion_mensajes</item>
+        <item>@string/opcion_tienda</item>
+        <item>@string/opcion_configuracion</item>
+        <item>@string/opcion_salir</item>
+    </string-array>
+    
+</resources>

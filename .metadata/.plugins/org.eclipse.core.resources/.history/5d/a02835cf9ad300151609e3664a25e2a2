@@ -1,0 +1,98 @@
+package co.wog.wogmoney;
+
+import co.wog.monedero.CarritoDeComprasDetailActivity;
+import co.wog.monedero.CarritoDeComprasDetailFragment;
+import co.wog.monedero.model.CuentaBancariaModel.CuentaItem;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class TransferenciasActivity extends ActionBarActivity implements CuentaBancariaFragment.OnHeadlineSelectedListener {
+
+	public static final String FRG_CUENTA_ENTIDAD = "cuentaEntidadFragment";
+	
+	public static final String CUENTA_BANCARIA_INDEX = "cuentaBancariaIndex";
+	
+	public static final String CUENTA_ID = "cuentaId";
+	public static final String DESC_CUENTA = "descCuenta";
+	public static final String NRO_CUENTA = "nroCuenta";
+	
+	public static final String CAMPO = "campo";
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_transferencias);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+//		if (savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.transferencia_container, new TransferenciasFragment()).commit();
+//		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.transferencias, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		switch (item.getItemId()) {
+			case R.id.action_settings:
+				return true;
+			case android.R.id.home:
+	            return false;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+
+	}
+	
+	public void cambiarFragmento () {
+		
+		CuentaEntidadFragment cuentasEntidadFrg = (CuentaEntidadFragment)
+                getSupportFragmentManager().findFragmentById(R.layout.frg_cuentas_entidad);
+		
+		if ( cuentasEntidadFrg != null ) {
+		
+			//Si el fragmento existe estamos en un una interfaz con dos paneles
+		} else {
+		
+			CuentaEntidadFragment newFragment = new CuentaEntidadFragment();
+			
+			FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+			
+			// Reemplazamos lo que haya en la vista fragment_container con este fragmento,
+            // y añadimos la transacción a la pila de vuelta para que el usuario pueda volver
+            transaction.replace(R.id.transferencia_container, newFragment);
+            transaction.addToBackStack(null);
+
+            // Aplica la transacción
+            transaction.commit();
+			
+		}
+		
+	}
+	
+	public void onCuentaBancariaSelected(int position) {
+
+		Bundle arguments = new Bundle();
+		arguments.putInt(CUENTA_BANCARIA_INDEX, position);
+		CuentaEntidadFragment fragment = new CuentaEntidadFragment();
+		fragment.setArguments(arguments);
+		getSupportFragmentManager().beginTransaction().replace(R.id.transferencia_container, fragment).commit();
+		
+    }
+
+}
